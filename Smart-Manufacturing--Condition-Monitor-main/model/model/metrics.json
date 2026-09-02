@@ -1,0 +1,129 @@
+{
+  "best_model": "HistGradientBoosting",
+  "accuracy": 0.999,
+  "macro_f1": 0.9773,
+  "classification_report": {
+    "Critical_Failure": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 263.0
+    },
+    
+    "Energy_Inefficient": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1-score": 0.8888888888888888,
+      "support": 4.0
+    },
+    "High_Downtime": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 530.0
+    },
+    "Optimal_Operation": {
+      "precision": 1.0,
+      "recall": 0.9979296066252588,
+      "f1-score": 0.9989637305699481,
+      "support": 483.0
+    },
+    "Quality_Degraded": {
+      "precision": 0.9986111111111111,
+      "recall": 0.9986111111111111,
+      "f1-score": 0.9986111111111111,
+      "support": 720.0
+    },
+    "accuracy": 0.999,
+    "macro avg": {
+      "precision": 0.9597222222222221,
+      "recall": 0.9993081435472739,
+      "f1-score": 0.9772927461139895,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9991,
+      "recall": 0.999,
+      "f1-score": 0.9990275187104203,
+      "support": 2000.0
+    }
+  },
+  "classes": [
+    "Critical_Failure",
+    "Energy_Inefficient",
+    "High_Downtime",
+    "Optimal_Operation",
+    "Quality_Degraded"
+  ],
+  "confusion_matrix": [
+    [
+      263,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      530,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      482,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      719
+    ]
+  ],
+  "numeric_features": [
+    "Temperature_C",
+    "Vibration_mm_s",
+    "Pressure_bar",
+    "Humidity_%",
+    "Energy_Consumption_kWh",
+    "Machine_Speed_RPM",
+    "Downtime_Minutes",
+    "Throughput_units_hr",
+    "Product_Quality_Score",
+    "Reject_Rate_%"
+  ],
+  "categorical_features": [
+    "Operation_Mode",
+    "Machine_ID",
+    "Fault_Type"
+  ],
+  "feature_order": [
+    "Temperature_C",
+    "Vibration_mm_s",
+    "Pressure_bar",
+    "Humidity_%",
+    "Energy_Consumption_kWh",
+    "Machine_Speed_RPM",
+    "Downtime_Minutes",
+    "Throughput_units_hr",
+    "Product_Quality_Score",
+    "Reject_Rate_%",
+    "Operation_Mode",
+    "Machine_ID",
+    "Fault_Type"
+  ],
+  "n_train": 8000,
+  "n_test": 2000
+}
